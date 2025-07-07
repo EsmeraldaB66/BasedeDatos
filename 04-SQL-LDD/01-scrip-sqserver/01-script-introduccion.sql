@@ -109,7 +109,7 @@ IdEmployee1 int not null,
 IdProject int not null,
 horas int not null,
 CONSTRAINT unique_idemployee
-UNIQUE (IdEmployee1),
+UNIQUE (IdEmployee1, IdProject),
 CONSTRAINT fk_work_on_employee
 FOREIGN KEY(IdEmployee1)
 REFERENCES Employee(Id),
